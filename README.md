@@ -52,16 +52,16 @@ bash
 (crontab -l ; echo "0 3 * * 1 certbot renew --quiet && docker restart nginx_https") | crontab -
 
 //Esto intentará renovar el certificado cada lunes a las 03:00 AM.
-
+---
 🛠 Requisitos
 ✅ Un dominio apuntando a tu servidor.
 ✅ Ubuntu/Debian (o cualquier sistema con Bash).
 ✅ Puertos 80 y 443 abiertos en el firewall.
 ✅ Docker instalado (el script lo instala si no está presente).
-
+---
 📜 Licencia
 Este proyecto está bajo la Licencia MIT – puedes usarlo, modificarlo y distribuirlo libremente.
-
+---
 👨‍💻 Contribuir
 ¿Quieres mejorar este proyecto? ¡Las contribuciones son bienvenidas! Puedes:
 
