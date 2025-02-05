@@ -50,8 +50,8 @@ Los certificados de Let's Encrypt expiran cada 90 días. Para renovarlos automá
 bash
 
 (crontab -l ; echo "0 3 * * 1 certbot renew --quiet && docker restart nginx_https") | crontab -
+Esto intentará renovar el certificado cada lunes a las 03:00 AM.
 
-//Esto intentará renovar el certificado cada lunes a las 03:00 AM.
 ---
 🛠 Requisitos
 ✅ Un dominio apuntando a tu servidor.
